@@ -44,12 +44,13 @@ a{
 
 /* Header */
 header {
-    
     background-color: #011627;
     color: #e8eddf;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: 3px #bdd5ea solid;
+    max-height: 140px;
+    flex-grow: 1;
 }
 
 header a {
@@ -88,13 +89,13 @@ header a:hover {
 /* Boxes */
 #boxes {
     margin-top: 20px;
-    flex-grow: 1;
+    flex-grow: 8;
 }
 
 #formacion {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 #boxes h3, #boxes p {
@@ -110,7 +111,7 @@ header a:hover {
     border-radius: 5px;
 
     float: left;
-    min-width: 300px;
+    min-width: 250px;
     padding: 10px;
     text-align: center;
 }
@@ -127,4 +128,6 @@ footer {
     color: #e8eddf;
     background-color: #212d40;
     text-align: center;
+    max-height: 70px;
+    flex-grow: 1;
 }
