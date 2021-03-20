@@ -6,6 +6,8 @@ Portfolio page.
 
 * Progress: «WIP»
 
+* `Link to the page <https://rogerpb98.github.io/index>`_
+
 INDEX
 ====
 
