@@ -96,11 +96,14 @@ header a:hover {
 
 #boxes h3, #boxes p {
     color: #000000;
+    font-size: 3vmin;
 }
 
 #boxes .box {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
+    justify-content: center;
     background: lightgray;
 
     border: #000000 solid 1px;
@@ -110,6 +113,10 @@ header a:hover {
     min-width: 230px;
     padding: 10px;
     text-align: center;
+}
+
+#boxes .cosas, #boxes img {
+    flex-grow: 1;
 }
 
 #boxes #test {
@@ -139,8 +146,10 @@ header a:hover {
 }
 
 #boxes .box img {
-    width: 120px;
-    height: 70px;
+    width: 60%;
+    height: auto;
+    /*width: 120px;*/
+    /*height: 70px;*/
 }
 
 /* Footer */
@@ -158,10 +167,13 @@ footer {
     color: #e8eddf;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 640px) {
     header .container{
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
+    }
+    header a {
+        font-size: 14px;
     }
 }
