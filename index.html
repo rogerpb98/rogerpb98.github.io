@@ -1,52 +1,348 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="description" content="Portfolio">
-    <meta name="keywords" content="Roger Pérez Blanco, rogerpb98, frontend">
-    <meta name="description" content="Roger Pérez Blanco">
-    <title>Roger Pérez Blanco | Welcome</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-    <script src='main.js'></script>
-
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+        rel="apple-touch-icon"
+        sizes="76x76"
+        href="./assets/img/apple-icon.png"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>Home | Roger Pérez Blanco</title>
 </head>
 <body>
-    <div id="fullscreen">
-        <header>
-            <div class="container">
-                <div id="nom">
-                    <h1>Roger Pérez Blanco</h1>
+    <!-- navbar goes here -->
+    <nav class="bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <svg class="h-6 w-6 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" />
+                            </svg>
+                            <span class="font-bold">Roger Pérez Blanco</span>
+                        </a>
+                    </div>
+            
+                    <!-- primary nav -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#studies" class="py-5 px-3 text-gray-700 hover:text-gray-900">Studies</a>
+                        <a href="#future" class="py-5 px-3 text-gray-700 hover:text-gray-900">Into the Future</a>
+                    </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="studies.html">Studies</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
+        
+                <!-- secondary nav -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="https://github.com/rogerpb98" target="_blank" class="py-5 px-3">GitHub</a>
+                    <a href="https://www.linkedin.com/in/rogerpb98/" target="_blank" class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">LinkedIn</a>
+                </div>
+        
+                <!-- mobile button goes here -->
+                <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                </div>
+        
             </div>
-        </header>
+        </div>
+    
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#studies" class="block py-2 px-4 text-sm hover:bg-gray-200">Studies</a>
+            <a href="#future" class="block py-2 px-4 text-sm hover:bg-gray-200">Into the Future</a>
+        </div>
+    </nav>
+  
+  <!-- content goes here -->
+    <main>
+        <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"  style='background-image: url("img/BarcelonaBG.png"); background-position: top;'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+            </div>
+            <div class="container relative mx-auto">
+                <div class="items-center flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                        <div class="pr-12">
+                            <h1 class="text-white font-semibold text-5xl">
+                                Roger Pérez Blanco
+                            </h1>
+                            <p class="mt-4 text-lg text-gray-300">
+                                Web development student
+                            </p>
+                            <p class="mt-4 text-lg text-gray-300">
+                                Technician in microcomputer systems and networks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px;" >
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100" ></polygon>
+            </svg>
+            </div>
+        </div>
 
-        <section id="boxes">
-            <div class="container">
-                <div id="test">
-                    <h3>Web Dev Student</h3>
-                    <a href="https://github.com/rogerpb98">GitHub</a>
-                    <a href="https://www.linkedin.com/in/rogerpb98/">LinkedIn</a>
+        <!--SMIX-->
+        <section class="relative py-20" id="studies">
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="items-center flex flex-wrap">
+                <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                    <img alt="..." class="max-w-full rounded-lg shadow-lg" src="img/SysAdminImage.jpg" />
+                </div>
+                <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                    <div class="md:pr-12">
+                        <h3 class="text-3xl font-semibold">Networks and Microcomputer Systems</h3>
+                        <p><b>2018 - 2020 </b>in Escola del Treball de Barcelona</p>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                            In this  Formative Cycle of Average Degree i learned to manage Linux and Windows systems, Networking and scripting with some useful technologies like
+                        </p>
+                        <ul class="list-none mt-6">
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <h4 class="text-gray-600 flex">
+                                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                            Active Directory
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <h4 class="text-gray-600 flex">
+                                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                            LDAP
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <h4 class="text-gray-600 flex">
+                                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                            Wireshark and Cisco PacketTracer
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <h4 class="text-gray-600 flex">
+                                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                            Bash scripting
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div>
+                                        <h4 class="text-gray-600 flex">
+                                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                            Python
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!--DAW-->
+        <section class="relative py-20">
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;" >
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0" >
+                        <polygon class="text-white fill-current" points="2560 0 2560 100 0 100" ></polygon>
+                </svg>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="items-center flex flex-wrap">
+                    <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                        <div class="md:pr-12">
+                            <h3 class="text-3xl font-semibold">Web Applications Development</h3>
+                            <p><b>2020 - Now </b>in IES Joan d'Àustria</p>
+                            <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                In this Higher Level Training Cycle focused I'm learning to build web applications and learning different programing languages as well as SQL.
+                            </p>
+                            <ul class="list-none mt-6">
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <h4 class="text-gray-600 flex">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                                Java
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <h4 class="text-gray-600 flex">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                                HTML/CSS
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <h4 class="text-gray-600 flex">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                                MySQL/PLSQL
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <h4 class="text-gray-600 flex">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                                XML/XPath
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <h4 class="text-gray-600 flex">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                                JavaScript (later this year, currently learning by myself on CodeCademy)
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                        <img alt="..." class="max-w-full rounded-lg shadow-lg" src="img/WebDevImage.jpg"/>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <p>Roger Pérez Blanco, web under development</p>
-            <div id="redes">
-                <a href="https://github.com/rogerpb98">GitHub</a>
-                <a href="https://www.linkedin.com/in/rogerpb98/">LinkedIn</a>
+        <!--Into the future-->
+        <section class="pb-20 relative block bg-gray-900" id="future">
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
             </div>
-        </footer>
-    </div>
+            <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+                <div class="flex flex-wrap text-center justify-center">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <h2 class="text-4xl font-semibold text-white">Into the future</h2>
+                        <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                            This section is just a small talk about my interests and a peak into the future i want to live
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap mt-12 justify-center">
+                    <div class="w-full lg:w-3/12 px-4 text-center">
+                        <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                            <i class="fas fa-medal text-xl"></i>
+                        </div>
+                        <h6 class="text-xl mt-5 font-semibold text-white">
+                            Grades
+                        </h6>
+                        <p class="mt-2 mb-4 text-gray-500">
+                            In the future, i'd like to learn technologies related to Data Science and Data Analisys, as well as polishing my Front-End and Backend skills, to become a fully fledged FullStack Developer.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-3/12 px-4 text-center">
+                        <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                            <i class="fas fa-poll text-xl"></i>
+                        </div>
+                        <h5 class="text-xl mt-5 font-semibold text-white">
+                            Stonks
+                        </h5>
+                        <p class="mt-2 mb-4 text-gray-500">
+                            I'm very interested in learning how to play the crypto currency market, as i think they will play a big role in the future (and even now), so I definitely won't miss the chance when the time comes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                        Find me on any of the platforms listed on the nav menu and/or rogerpb98@gmail.com
+                    </h5>
+                </div>               
+            </div>
+            
+                <hr class="my-6 border-gray-400" />
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-gray-600 font-semibold py-1">
+                        Page made with the help of
+                        <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download" class="text-gray-600 hover:text-gray-900">
+                            this Tailwind CSS Starter Kit
+                        </a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
